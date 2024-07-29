@@ -22,4 +22,24 @@ public class RegistrationPage {
                 webDriver.findElement(passwordField).isDisplayed() &&
                 webDriver.findElement(confirmPasswordField).isDisplayed();
     }
+
+    public boolean isFirstNameFieldPresent() {
+        return webDriver.findElement(firstNameField).isDisplayed();
+    }
+
+    public boolean isLastNameFieldPresent() {
+        return webDriver.findElement(lastNameField).isDisplayed();
+    }
+
+    public boolean isEmailFieldPresent() {
+        return webDriver.findElement(emailField).isDisplayed();
+    }
+
+    public boolean isPasswordFieldPresent() {
+        return webDriver.findElement(passwordField).isDisplayed();
+    }
+
+    public boolean isConfirmPasswordFieldPresent() {
+        return webDriver.findElement(confirmPasswordField).isDisplayed();
+    }
 }

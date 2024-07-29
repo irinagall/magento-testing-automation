@@ -9,3 +9,7 @@ Feature: User Registration
     When I click the "Create an Account" link
     Then I am taken to the registration page
     And the registration form fields are visible
+
+  Scenario: 1.3.1 Fill in the form
+    Given I am on the registration form page
+    Then the form includes fields for first name, last name, email address, password, and password confirmation

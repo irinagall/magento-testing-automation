@@ -29,4 +29,8 @@ public class Website {
     public RegistrationPage getRegistrationPage() {
         return registrationPage;
     }
+
+    public void navigateToRegistrationPage() {
+        webDriver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+    }
 }
