@@ -8,11 +8,13 @@ public class Website {
 
     private WebDriver webDriver;
     private HomePage homePage;
+    private RegistrationPage registrationPage;
     private SearchResultPage searchResultPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
         homePage = new HomePage(driver);
+        registrationPage = new RegistrationPage(driver);
         searchResultPage = new SearchResultPage(driver);
     }
 
@@ -32,6 +34,13 @@ public class Website {
         return webDriver.getTitle();
     }
 
+    public RegistrationPage getRegistrationPage() {
+        return registrationPage;
+    }
+
+    public void navigateToRegistrationPage() {
+        webDriver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+      
     public WebDriver getWebDriver() {
         return webDriver;
     }
