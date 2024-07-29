@@ -8,12 +8,18 @@ public class Website {
 
     private WebDriver webDriver;
     private HomePage homePage;
+    private BagsPage bagsPage;
+    private ProductPage productPage;
+    private ShippingDetailsPage shippingDetailsPage;
     private RegistrationPage registrationPage;
     private SearchResultPage searchResultPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
         homePage = new HomePage(driver);
+        bagsPage = new BagsPage(driver);
+        productPage = new ProductPage(driver);
+        shippingDetailsPage = new ShippingDetailsPage(driver);
         registrationPage = new RegistrationPage(driver);
         searchResultPage = new SearchResultPage(driver);
     }
@@ -22,8 +28,20 @@ public class Website {
         return homePage;
     }
 
+    public BagsPage getBagsPage() {
+        return bagsPage;
+    }
+
+    public ProductPage getProductPage() {
+        return productPage;
+    }
+
+    public ShippingDetailsPage getShippingDetailsPage() {
+        return shippingDetailsPage;
+
     public SearchResultPage getSearchResultPage(){
         return searchResultPage;
+
     }
 
     public String getCurrentUrl() {
