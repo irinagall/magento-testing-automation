@@ -23,7 +23,9 @@ public class HomePage {
 
 
     public void clickCreateAccountLink() {
-        webDriver.findElement(createAccountLink).click();
+        webDriver.findElement(createAccountLink)
+                 .click();
+    }
 
     public WebElement getSearchBar(){
         return webDriver.findElement(By.id("search"));

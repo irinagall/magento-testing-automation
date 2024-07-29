@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88daedc1-a0a4-4449-b8ee-6b1da5c950ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/TestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/TestSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +45,9 @@
     "Cucumber Java.Scenario: Navigate to shipping details.executor": "Run",
     "Cucumber Java.Scenario: Navigating to a product page.executor": "Run",
     "JUnit.Profiletest.checkThatTheWebDriverWorks.executor": "Run",
+    "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/add-to-cart",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/java",
     "last_opened_file_path": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/resources",
@@ -68,7 +67,7 @@
       <recent name="stepdefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: ShippingDetails" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ShippingDetails.feature" />
@@ -77,26 +76,6 @@
       <module name="magento-testing-automation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: ShippingDetails" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: 2.1.1 - Add item to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddToCart.feature" />
-      <option name="GLUE" value="webtestframework.stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="magento-testing-automation" />
-      <option name="NAME_FILTER" value="^2\.1\.1 \- Add item to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^2\.1\.1 \- Add item to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: 2.1.1 - Add item to the cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -168,13 +147,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magento-testing-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtestframework.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webtestframework.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="webtestframework.stepdefs.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form" />
         <item itemvalue="Cucumber Java.Feature: ShippingDetails" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.2 - Entering full shipping details progresses the checkout workflow" />
         <item itemvalue="Cucumber Java.Scenario: Navigate to shipping details" />
-        <item itemvalue="Cucumber Java.Scenario: 2.1.1 - Add item to the cart" />
       </list>
     </recent_temporary>
   </component>

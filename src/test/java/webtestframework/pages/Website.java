@@ -38,10 +38,10 @@ public class Website {
 
     public ShippingDetailsPage getShippingDetailsPage() {
         return shippingDetailsPage;
+    }
 
     public SearchResultPage getSearchResultPage(){
         return searchResultPage;
-
     }
 
     public String getCurrentUrl() {
@@ -58,6 +58,7 @@ public class Website {
 
     public void navigateToRegistrationPage() {
         webDriver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+    }
       
     public WebDriver getWebDriver() {
         return webDriver;
