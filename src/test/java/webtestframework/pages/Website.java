@@ -8,14 +8,20 @@ public class Website {
 
     private WebDriver webDriver;
     private HomePage homePage;
+    private SearchResultPage searchResultPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
         homePage = new HomePage(driver);
+        searchResultPage = new SearchResultPage(driver);
     }
 
     public HomePage getHomePage() {
         return homePage;
+    }
+
+    public SearchResultPage getSearchResultPage(){
+        return searchResultPage;
     }
 
     public String getCurrentUrl() {
@@ -28,13 +34,5 @@ public class Website {
 
     public WebDriver getWebDriver() {
         return webDriver;
-    }
-
-    public WebElement getSearchBar(){
-        return webDriver.findElement(By.id("search"));
-    }
-
-    public WebElement getSearchButton(){
-        return webDriver.findElement(By.cssSelector("button[title='Search']"));
     }
 }

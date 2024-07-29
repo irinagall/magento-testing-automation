@@ -47,19 +47,19 @@ public class SearchStepdefs {
 
     @When("I type in {string} to the search bar")
     public void iTypeInToTheSearchBar(String query) {
-        WebElement searchBar = website.getSearchBar();
+        WebElement searchBar = website.getHomePage().getSearchBar();
         searchBar.sendKeys(query);
     }
 
     @And("clicked the search button")
     public void clickedTheSearchButton() {
-        WebElement searchButton = website.getSearchButton();
+        WebElement searchButton = website.getHomePage().getSearchButton();
         searchButton.click();
     }
 
     @Then("the first item returned should be {string}")
     public void theFirstItemReturnedShouldBe(String productName) {
         SearchResultPage searchResultPage = new SearchResultPage(website.getWebDriver());
-        Assertions.assertEquals(productName, searchResultPage.getFirstResult());
+        Assertions.assertEquals(productName, website.getSearchResultPage().getFirstResult());
     }
 }
