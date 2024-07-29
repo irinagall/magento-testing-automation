@@ -19,12 +19,12 @@ The things you need before installing the software.
 A step by step guide that will tell you how to get the development environment up and running.
 
 
-* Move the chromedriver and license files downloaded above to src/test/resources
-* Create a new file test.properties inside src/test/resources
+* Move the chromedriver and license files downloaded above to "src/test/resources"
+* Create a new file test.properties inside "src/test/resources"
 * Add driver.location=src/test/resources/chromedriver to test.properties or a different location where your web driver is located
 
 
 ## Usage
 
-* Go to the features folder "src/test/resources/features" to run any of the scenario provided
+* Go to "src/test/java/webtestframework/stepdefs/TestRunner.java" and run the TestRunner class
 
