@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="88daedc1-a0a4-4449-b8ee-6b1da5c950ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/RegistrationPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/RegistrationPageStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/TestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/TestSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ShippingDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ShippingDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/ShippingDetailsStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/ShippingDetailsStepdefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     "Cucumber Java.Feature: AddToCart.executor": "Run",
     "Cucumber Java.Feature: Login.executor": "Run",
     "Cucumber Java.Feature: Purchase.executor": "Run",
+    "Cucumber Java.Feature: Search.executor": "Run",
     "Cucumber Java.Feature: ShippingDetails.executor": "Run",
     "Cucumber Java.Scenario: 2.1.1 - Add item to the cart.executor": "Run",
     "Cucumber Java.Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form.executor": "Run",
@@ -73,33 +75,15 @@
       <recent name="stepdefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Login">
+  <component name="RunManager" selected="Cucumber Java.Feature: ShippingDetails">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="magento-testing-automation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
       <option name="GLUE" value="webtestframework.stepdefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="magento-testing-automation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Search" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -170,13 +154,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="magento-testing-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtestframework.stepdefs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webtestframework.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="webtestframework.stepdefs.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Feature: ShippingDetails" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.2 - Entering full shipping details progresses the checkout workflow" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form" />
-        <item itemvalue="Cucumber Java.Feature: ShippingDetails" />
-        <item itemvalue="Cucumber Java.Feature: Search" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +198,7 @@
       <workItem from="1721989650724" duration="5000" />
       <workItem from="1722005218072" duration="1224000" />
       <workItem from="1722238718338" duration="3629000" />
-      <workItem from="1722268240579" duration="344000" />
+      <workItem from="1722268240579" duration="6299000" />
     </task>
     <servers />
   </component>
