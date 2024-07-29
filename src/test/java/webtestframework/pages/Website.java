@@ -8,13 +8,14 @@ public class Website {
     private HomePage homePage;
     private BagsPage bagsPage;
     private ProductPage productPage;
+    private ShippingDetailsPage shippingDetailsPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
         homePage = new HomePage(driver);
         bagsPage = new BagsPage(driver);
         productPage = new ProductPage(driver);
-
+        shippingDetailsPage = new ShippingDetailsPage(driver);
     }
 
     public HomePage getHomePage() {
@@ -27,6 +28,10 @@ public class Website {
 
     public ProductPage getProductPage() {
         return productPage;
+    }
+
+    public ShippingDetailsPage getShippingDetailsPage() {
+        return shippingDetailsPage;
     }
 
     public String getCurrentUrl() {

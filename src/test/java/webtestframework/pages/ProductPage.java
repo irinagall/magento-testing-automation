@@ -16,6 +16,9 @@ public class ProductPage {
     private By addToCartButton = new By.ById("product-addtocart-button");
     private By successMessage = new By.ByCssSelector("message-success > div");
     private By cartCounter = new By.ByClassName("counter-number");
+    private By cartIcon = new By.ByClassName("showcart");
+    private By checkoutButton = new By.ByCssSelector("button[title='Proceed to Checkout'");
+    private By goToCartLink = new By.ByClassName("viewcart");
 
     public ProductPage(WebDriver webDriver) {
         this.webDriver = webDriver;
@@ -41,14 +44,33 @@ public class ProductPage {
 
     public int getCartCount() {
         try {
-            webDriverWait.until(driver -> {
-                String cartCount = driver.findElement(cartCounter)
-                                         .getText();
-                return !cartCount.equals("0") && !cartCount.isEmpty();
-            });
+            waitUntilCartUpdated();
             return Integer.parseInt(webDriver.findElement(cartCounter).getText());
         } catch (NoSuchElementException | NumberFormatException e) {
             throw new RuntimeException("Did not find the element or the number was not formatted correctly");
         }
+    }
+
+    public void openCart() {
+        waitUntilCartUpdated();
+        webDriver.findElement(cartIcon).click();
+    }
+
+    public void checkout() {
+        webDriverWait.until(driver -> driver.findElement(By.id("minicart-content-wrapper")).isDisplayed());
+        webDriver.findElement(checkoutButton).click();
+    }
+
+    public void viewAndEditCart() {
+        webDriverWait.until(driver -> driver.findElement(By.className("block-minicart")).isDisplayed());
+        webDriver.findElement(goToCartLink).click();
+    }
+
+    private void waitUntilCartUpdated() {
+        webDriverWait.until(driver -> {
+            String cartCount = driver.findElement(cartCounter)
+                                     .getText();
+            return !cartCount.equals("0") && !cartCount.isEmpty();
+        });
     }
 }
