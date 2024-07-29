@@ -26,8 +26,6 @@ $ Add driver.location=src/test/resources/chromedriver to test.peoperties or a di
 
 ## Usage
 
-A few examples of useful commands and/or tasks.
-
 ```
 $ Go to the features folder "src/test/resources/features" to run any of the scenario provided
 ```
