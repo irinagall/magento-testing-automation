@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="88daedc1-a0a4-4449-b8ee-6b1da5c950ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +37,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: 2.1.1 - Add item to the cart.executor": "Run",
+    "Cucumber Java.Scenario: Bags items are displayed.executor": "Run",
+    "Cucumber Java.Scenario: Navigating to a product page.executor": "Run",
     "JUnit.Profiletest.checkThatTheWebDriverWorks.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/initial-structure",
+    "git-widget-placeholder": "feature/add-to-cart",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/java",
     "last_opened_file_path": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/resources",
@@ -59,7 +62,67 @@
       <recent name="stepdefs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Scenario: 2.1.1 - Add item to the cart">
+    <configuration name="Scenario: 2.1.1 - Add item to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddToCart.feature" />
+      <option name="GLUE" value="webtestframework.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magento-testing-automation" />
+      <option name="NAME_FILTER" value="^2\.1\.1 \- Add item to the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^2\.1\.1 \- Add item to the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: 2.1.1 - Add item to the cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Bags items are displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddToCart.feature" />
+      <option name="GLUE" value="webtestframework.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magento-testing-automation" />
+      <option name="NAME_FILTER" value="^Bags items are displayed$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Bags items are displayed$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Bags items are displayed" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Navigating to a product page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddToCart.feature" />
+      <option name="GLUE" value="webtestframework.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="magento-testing-automation" />
+      <option name="NAME_FILTER" value="^Navigating to a product page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Navigating to a product page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Navigating to a product page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Profiletest.checkThatTheWebDriverWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="magento-testing-automation" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,6 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: 2.1.1 - Add item to the cart" />
+        <item itemvalue="Cucumber Java.Scenario: Navigating to a product page" />
+        <item itemvalue="Cucumber Java.Scenario: Bags items are displayed" />
         <item itemvalue="JUnit.Profiletest.checkThatTheWebDriverWorks" />
       </list>
     </recent_temporary>
