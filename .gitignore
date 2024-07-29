@@ -36,3 +36,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+#ChromeDriver
+chromedriver
+chromedriver.exe
+LICENSE.chromedriver
+
+# properties 
+*.properties
