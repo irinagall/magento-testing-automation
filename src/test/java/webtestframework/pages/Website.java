@@ -6,10 +6,12 @@ public class Website {
 
     private WebDriver webDriver;
     private HomePage homePage;
+    private RegistrationPage registrationPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
         homePage = new HomePage(driver);
+        registrationPage = new RegistrationPage(driver);
     }
 
     public HomePage getHomePage() {
@@ -22,5 +24,9 @@ public class Website {
 
     public String getPageTitle() {
         return webDriver.getTitle();
+    }
+
+    public RegistrationPage getRegistrationPage() {
+        return registrationPage;
     }
 }
