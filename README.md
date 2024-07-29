@@ -1,4 +1,4 @@
-# Magento software testing board
+# Magento software testing board project
 
 A simple project testing the magento software testing board website using cucumber and java.
 
