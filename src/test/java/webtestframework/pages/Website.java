@@ -1,6 +1,8 @@
 package webtestframework.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Website {
 
@@ -9,6 +11,8 @@ public class Website {
     private BagsPage bagsPage;
     private ProductPage productPage;
     private ShippingDetailsPage shippingDetailsPage;
+    private RegistrationPage registrationPage;
+    private SearchResultPage searchResultPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
@@ -16,6 +20,8 @@ public class Website {
         bagsPage = new BagsPage(driver);
         productPage = new ProductPage(driver);
         shippingDetailsPage = new ShippingDetailsPage(driver);
+        registrationPage = new RegistrationPage(driver);
+        searchResultPage = new SearchResultPage(driver);
     }
 
     public HomePage getHomePage() {
@@ -32,6 +38,10 @@ public class Website {
 
     public ShippingDetailsPage getShippingDetailsPage() {
         return shippingDetailsPage;
+
+    public SearchResultPage getSearchResultPage(){
+        return searchResultPage;
+
     }
 
     public String getCurrentUrl() {
@@ -40,5 +50,16 @@ public class Website {
 
     public String getPageTitle() {
         return webDriver.getTitle();
+    }
+
+    public RegistrationPage getRegistrationPage() {
+        return registrationPage;
+    }
+
+    public void navigateToRegistrationPage() {
+        webDriver.get("https://magento.softwaretestingboard.com/customer/account/create/");
+      
+    public WebDriver getWebDriver() {
+        return webDriver;
     }
 }

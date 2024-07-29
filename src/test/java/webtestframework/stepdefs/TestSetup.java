@@ -18,7 +18,6 @@ import java.util.Properties;
 public class TestSetup {
 
     private static final String PROPERTIES_FILE_LOCATION = "src/test/resources/test.properties";
-//    private static final String DRIVER_LOCATION = "src/test/resources/chromedriver";
     private static ChromeDriverService service;
     private static WebDriver webDriver;
     private static Logger logger = LoggerFactory.getLogger(TestSetup.class);
@@ -27,7 +26,7 @@ public class TestSetup {
     public static ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
-//        options.addArguments("--headless");
+       // options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
         options.setImplicitWaitTimeout(Duration.ofSeconds(10));
         return options;
