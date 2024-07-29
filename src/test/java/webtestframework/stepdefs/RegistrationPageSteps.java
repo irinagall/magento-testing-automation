@@ -6,6 +6,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import webtestframework.pages.Website;
 
@@ -53,5 +54,21 @@ public class RegistrationPageSteps {
         Assert.assertTrue( website.getRegistrationPage().isEmailFieldPresent());
         Assert.assertTrue(website.getRegistrationPage().isPasswordFieldPresent());
         Assert.assertTrue( website.getRegistrationPage().isConfirmPasswordFieldPresent());
+    }
+
+    @When("I enter {string} into the password field")
+    public void iEnterIntoThePasswordField(String password) {
+        website.getRegistrationPage().setPassword(password);
+    }
+
+    @When("I enter {string} into the confirmation password field")
+    public void iEnterIntoTheConfirmationPasswordField(String confirmPassword) {
+        website.getRegistrationPage().setConfirmPassword(confirmPassword);
+    }
+
+    @Then("a message {string} will display")
+    public void aMessageWillDisplay(String expectedMessage) {
+        Assert.assertTrue("Password mismatch error message is not displayed",
+                website.getRegistrationPage().isPasswordMismatchErrorDisplayed());
     }
 }
