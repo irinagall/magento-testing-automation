@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,7 +15,9 @@ import java.io.IOException;
 
 public class RegistrationPageSteps {
     private Website website;
-    private static final String REGISTRATION_URL = "https://magento.softwaretestingboard.com/";
+
+  //  private static final String REGISTRATION_URL = "https://magento.softwaretestingboard.com/";
+
 
     @BeforeAll
     public static void beforeAll() throws IOException {
@@ -26,14 +29,15 @@ public class RegistrationPageSteps {
         TestSetup.stopChromeService();
     }
 
-    @After
-    public void afterEach(){
-        TestSetup.quitWebDriver();
+    @Before
+    public void setup(){
+        TestSetup.createWebDriver();
+        this.website = TestSetup.getWebsite("https://magento.softwaretestingboard.com/");
     }
 
-    @Before
-    public static void setup(){
-        TestSetup.createWebDriver();
+    @After
+    public void tearDown(){
+        TestSetup.quitWebDriver();
     }
 
 
@@ -54,14 +58,35 @@ public class RegistrationPageSteps {
         Assert.assertTrue( website.getRegistrationPage().isConfirmPasswordFieldPresent());
     }
 
-    @When("I enter {string} into the password field")
+
+
+    @When("I enter {string} into the first name field")
+    public void iEnterIntoTheFirstNameField(String firstName) {
+        website.getRegistrationPage().setFirstName(firstName);
+    }
+
+    @And("I enter {string} into the last name field")
+    public void iEnterIntoTheLastNameField(String lastName) {
+        website.getRegistrationPage().setLastName(lastName);
+    }
+
+    @And("I enter {string} into the email field")
+    public void iEnterIntoTheEmailField(String email) {
+        website.getRegistrationPage().setEmail(email);
+    }
+
+    @And("I enter {string} into the password field")
     public void iEnterIntoThePasswordField(String password) {
         website.getRegistrationPage().setPassword(password);
     }
 
-    @When("I enter {string} into the confirmation password field")
+    @And("I enter {string} into the confirmation password field")
     public void iEnterIntoTheConfirmationPasswordField(String confirmPassword) {
         website.getRegistrationPage().setConfirmPassword(confirmPassword);
+    }
+    @When("I click the create account button")
+    public void iClickTheCreateAccountButton() {
+        website.getRegistrationPage().clickCreateAccountButton();
     }
 
     @Then("a message {string} will display")
@@ -69,4 +94,6 @@ public class RegistrationPageSteps {
         Assert.assertTrue("Password mismatch error message is not displayed",
                 website.getRegistrationPage().isPasswordMismatchErrorDisplayed());
     }
+
+
 }

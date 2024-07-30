@@ -20,6 +20,10 @@ Feature: User Registration
   @Sad
   Scenario: 1.3.2 Passwords do not match
     Given I am on the registration form page
-    When I enter "password123" into the password field
-    And I enter "password456" into the confirmation password field
+    When I enter "Anabella" into the first name field
+    And I enter "Leeway" into the last name field
+    And I enter "anabellalee@yahoo.com" into the email field
+    And I enter "password123." into the password field
+    And I enter "password456." into the confirmation password field
+    When I click the create account button
     Then a message "Please enter the same value again." will display

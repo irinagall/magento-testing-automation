@@ -66,4 +66,27 @@ public class RegistrationPage {
             return false;
         }
     }
+
+    public void setFirstName(String firstName) {
+        WebElement firstNameField = webDriver.findElement(By.id("firstname"));
+        firstNameField.clear();
+        firstNameField.sendKeys(firstName);
+    }
+
+    public void setLastName(String lastName) {
+        WebElement lastNameField = webDriver.findElement(By.id("lastname"));
+        lastNameField.clear();
+        lastNameField.sendKeys(lastName);
+    }
+
+    public void setEmail(String email) {
+        WebElement emailField = webDriver.findElement(By.id("email_address"));
+        emailField.clear();
+        emailField.sendKeys(email);
+    }
+
+    public void clickCreateAccountButton() {
+        WebElement createAccountButton = webDriver.findElement(By.cssSelector("button.action.submit.primary"));
+        createAccountButton.click();
+    }
 }
