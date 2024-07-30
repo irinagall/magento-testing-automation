@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88daedc1-a0a4-4449-b8ee-6b1da5c950ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ShippingDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/ShippingDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/pages/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/ShippingDetailsStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestframework/stepdefs/ShippingDetailsStepdefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +52,7 @@
     "JUnit.TestRunner.executor": "Run",
     "JUnit.features in magento-testing-automation.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "presentation",
+    "git-widget-placeholder": "fix/shipping-details",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/java",
     "last_opened_file_path": "/Users/alastairsmith/source/repos/java-upskilling/magento-testing-automation/src/test/resources",
@@ -75,7 +72,7 @@
       <recent name="stepdefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ShippingDetails">
+  <component name="RunManager" selected="Cucumber Java.Feature: Login">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -171,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Feature: ShippingDetails" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.2 - Entering full shipping details progresses the checkout workflow" />
         <item itemvalue="Cucumber Java.Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>

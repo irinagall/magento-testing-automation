@@ -12,7 +12,7 @@ import webtestframework.pages.Website;
 
 import java.io.IOException;
 
-public class RegistrationPageStepdefs {
+public class RegistrationPageSteps {
     private Website website;
     private static final String REGISTRATION_URL = "https://magento.softwaretestingboard.com/";
 
