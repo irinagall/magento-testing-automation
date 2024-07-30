@@ -34,7 +34,7 @@ public class ShippingDetailsStepdefs {
 
     @Then("I am redirected to the shipping details page")
     public void iAmRedirectedToTheShippingDetailsPage() {
-        MatcherAssert.assertThat(website.getCurrentUrl(), is("https://magento.softwaretestingboard.com/checkout/#shipping"));
+        MatcherAssert.assertThat(website.getShippingDetailsPage().getTitle(), is("Shipping Address"));
     }
 
     @And("I have proceeded to the shipping details form")
@@ -57,7 +57,7 @@ public class ShippingDetailsStepdefs {
 
     @Then("I am taken to the payment page")
     public void iAmTakenToThePaymentPage() {
-        MatcherAssert.assertThat(website.getCurrentUrl(), is("https://magento.softwaretestingboard.com/checkout/#payment"));
+        MatcherAssert.assertThat(website.getPaymentPage().getTitle(), is("Payment Method"));
     }
 
     @When("I enter the following shipping address")

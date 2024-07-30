@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.time.Duration;
+
 public class Website {
 
     private WebDriver webDriver;
@@ -13,6 +15,7 @@ public class Website {
     private ShippingDetailsPage shippingDetailsPage;
     private RegistrationPage registrationPage;
     private SearchResultPage searchResultPage;
+    private PaymentPage paymentPage;
 
     public Website(WebDriver driver) {
         this.webDriver = driver;
@@ -22,6 +25,7 @@ public class Website {
         shippingDetailsPage = new ShippingDetailsPage(driver);
         registrationPage = new RegistrationPage(driver);
         searchResultPage = new SearchResultPage(driver);
+        paymentPage = new PaymentPage(driver);
     }
 
     public HomePage getHomePage() {
@@ -44,7 +48,12 @@ public class Website {
         return searchResultPage;
     }
 
+    public PaymentPage getPaymentPage() {
+        return paymentPage;
+    }
+
     public String getCurrentUrl() {
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         return webDriver.getCurrentUrl();
     }
 
