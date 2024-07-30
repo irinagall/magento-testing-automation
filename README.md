@@ -32,4 +32,4 @@ A step by step guide that will tell you how to get the development environment u
 
 ## Metrics
 
-To see the latest test metrics, see [the report](reports/testReport.html).
+To see the latest test metrics, see the reports in `reports/`.
