@@ -2,6 +2,8 @@
 
 A simple project testing the magento software testing board website using cucumber and java.
 
+Currently, the critical user journeys of setting up an account, locating a product and purchasing a product are being tested.
+
 ## Getting Started
 
 
@@ -28,3 +30,6 @@ A step by step guide that will tell you how to get the development environment u
 
 * Go to "src/test/java/webtestframework/stepdefs/TestRunner.java" and run the TestRunner class
 
+## Metrics
+
+To see the latest test metrics, see the reports in `reports/`.

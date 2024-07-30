@@ -16,7 +16,8 @@ import java.io.IOException;
 public class RegistrationPageSteps {
     private Website website;
 
-  
+  //  private static final String REGISTRATION_URL = "https://magento.softwaretestingboard.com/";
+
 
     @BeforeAll
     public static void beforeAll() throws IOException {
@@ -42,6 +43,7 @@ public class RegistrationPageSteps {
 
     @Given("I am on the registration form page")
     public void iAmOnTheRegistrationFormPage() {
+        website = TestSetup.getWebsite(REGISTRATION_URL);
         website.navigateToRegistrationPage();
         Assert.assertTrue("Not on registration page",
                 website.getCurrentUrl().contains("/customer/account/create/"));

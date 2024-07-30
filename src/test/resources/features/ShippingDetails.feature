@@ -4,11 +4,13 @@ Feature: 2.5 - Provide shipping details
   I want to be able to provide shipping details
   so that my order can be shipped to the correct location
 
+  @Happy
   Scenario: 2.5.1 - Proceeding to checkout brings up shipping details form
     Given I have added an item to my cart
     When I click to proceed to checkout
     Then I am redirected to the shipping details page
 
+  @Happy
   Scenario: 2.5.2 - Entering full shipping details progresses the checkout workflow
     Given I have added an item to my cart
     And I have proceeded to the shipping details form
